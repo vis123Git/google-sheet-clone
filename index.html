@@ -12,19 +12,20 @@
   <body>
     <div class="options">
       <div class="menus">
+        
         <div id="bold" onclick="onClickBold(this)" title="bold-text">B</div>
         <div id="italic" onclick="onClickItalic(this)" title="italic-text">I</div>
         <div id="underlined" onclick="onClickUnderline(this)" title="underline-text">U</div>
-        <div class="material-icons active-option" title="text-align-left" data-value="left" onclick="onClickTextAlign(this)">format_align_left</div>
-        <div class="material-icons" title="text-align-right" data-value="right" onclick="onClickTextAlign(this)">format_align_right</div>
-        <div class="material-icons" title="text-align-center" data-value="center" onclick="onClickTextAlign(this)">format_align_center</div>
+        <div class="material-icons active-option text-align" title="text-align-left" data-value="start" onclick="onClickTextAlign(this)">format_align_left</div>
+        <div class="material-icons text-align" title="text-align-right" data-value="right" onclick="onClickTextAlign(this)">format_align_right</div>
+        <div class="material-icons text-align" title="text-align-center" data-value="center" onclick="onClickTextAlign(this)">format_align_center</div>
         <div id="text-color" title="text-color">
           <label for="color-picker"><span class="material-icons"> border_color </span></label>
-          <input type="color" name="" id="color-picker" style="width: 0; height: 0" />
+          <input type="color" name="" id="color-picker" onchange="onChangeTextColor(this)" style="width: 0; height: 0" />
         </div>
         <div id="bg-color" title="background-color">
           <label for="bgcolor-picker"><span class="material-icons"> format_color_fill </span></label>
-          <input type="color" name="" id="bgcolor-picker" style="width: 0; height: 0" />
+          <input type="color" name="" id="bgcolor-picker"  onchange="onChangeBackgroundColor(this)"  style="width: 0; height: 0" />
         </div>
       </div>
       <span id="active-cell">null</span>

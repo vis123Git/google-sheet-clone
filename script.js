@@ -14,6 +14,9 @@ function createAndappendRow(rowNumber) {
   for (let i = 64; i <= 90; i++) {
     if (i == 64) {
       const b = document.createElement("b");
+      b.style.position = "sticky"
+      b.style.left = 0
+      b.style.backgroundColor = "#fff"
       b.innerText = rowNumber;
       row.appendChild(b);
     } else {
