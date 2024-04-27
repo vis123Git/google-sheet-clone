@@ -35,11 +35,12 @@
 }
 
 .options {
-  padding: 10px;
+  padding-top: 10px;
   background-color: #ecf0f1;
 }
 
 #active-cell {
   background-color: white;
-  padding: 2px 10px;
+  padding: 2px 20px;
+  min-width: 100px;
 }
